@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   applePrefab: {fileID: 127358, guid: 041ad1f37ce1645dbaaba1027c4186ab, type: 2}
-  speed: 10
+  speed: 1
   leftAndRightEdge: 20
   chanceToChangeDirection: 0.1
   secondsBetweenAppleDrops: 0.5
@@ -214,7 +214,7 @@ Prefab:
       objectReference: {fileID: 127358, guid: 041ad1f37ce1645dbaaba1027c4186ab, type: 2}
     - target: {fileID: 0}
       propertyPath: speed
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: leftAndRightEdge
