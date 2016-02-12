@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using UnityEngine.UI;
 public class Basket : MonoBehaviour {
 
 	public GUIText scoreGT;
@@ -22,7 +22,7 @@ public class Basket : MonoBehaviour {
 		this.transform.position = pos;
 	}
 		
-		void start()
+		void Start()
 	{
 		//find reference to the Score counter gameobject
 		GameObject scoreGO = GameObject.Find ("ScoreCounter");

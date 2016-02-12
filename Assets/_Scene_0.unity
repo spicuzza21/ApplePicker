@@ -97,6 +97,7 @@ GameObject:
   - 92: {fileID: 523721911}
   - 124: {fileID: 523721910}
   - 81: {fileID: 523721909}
+  - 114: {fileID: 523721914}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -134,7 +135,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.35266435, g: 0.65639824, b: 0.7137255, a: 0.019607844}
+  m_BackGroundColor: {r: 0.12262112, g: 0.19600719, b: 0.46323532, a: 0.016}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -171,6 +172,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &523721914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 523721908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9548effe29b256d45a7c8344ca45a645, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  basketPrefab: {fileID: 1522698639}
+  numBaskets: 3
+  basketBottomY: -14
+  basketSpacingY: 2
+  basketList: []
 --- !u!1001 &1024130244
 Prefab:
   m_ObjectHideFlags: 0
@@ -242,13 +259,13 @@ Light:
   m_Enabled: 1
   serializedVersion: 6
   m_Type: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 0.872, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 0
+    m_Type: 2
     m_Resolution: -1
     m_Strength: 1
     m_Bias: 0.05
@@ -261,7 +278,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 1
+  m_Lightmapping: 4
   m_BounceIntensity: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -277,7 +294,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
 --- !u!1001 &1189828952
 Prefab:
   m_ObjectHideFlags: 0
@@ -333,6 +350,14 @@ Prefab:
       propertyPath: leftAndRightEdge
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 11430338, guid: d7f01940a165244a1b0ed8ac30262aad, type: 2}
+      propertyPath: secondsBetweenAppleDrops
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11430338, guid: d7f01940a165244a1b0ed8ac30262aad, type: 2}
+      propertyPath: speed
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d7f01940a165244a1b0ed8ac30262aad, type: 2}
   m_IsPrefabParent: 0
@@ -360,7 +385,9 @@ GUIText:
   m_GameObject: {fileID: 1345964467}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: 1000
+  m_Text: '0
+
+'
   m_Anchor: 2
   m_Alignment: 2
   m_PixelOffset: {x: -10, y: -6}
@@ -386,7 +413,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
+--- !u!1 &1522698639 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 192158, guid: de728fd4f99f94c76a8a65699f3ca6fe, type: 2}
+  m_PrefabInternal: {fileID: 1024130244}
 --- !u!1001 &1865974715
 Prefab:
   m_ObjectHideFlags: 0
@@ -400,7 +431,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 427358, guid: 041ad1f37ce1645dbaaba1027c4186ab, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 427358, guid: 041ad1f37ce1645dbaaba1027c4186ab, type: 2}
       propertyPath: m_LocalPosition.z
@@ -491,4 +522,4 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
