@@ -126,7 +126,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11430338, guid: d7f01940a165244a1b0ed8ac30262aad, type: 2}
       propertyPath: speed
-      value: 1
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 11430338, guid: d7f01940a165244a1b0ed8ac30262aad, type: 2}
       propertyPath: leftAndRightEdge
