@@ -130,11 +130,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11430338, guid: d7f01940a165244a1b0ed8ac30262aad, type: 2}
       propertyPath: leftAndRightEdge
-      value: 10
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 11430338, guid: d7f01940a165244a1b0ed8ac30262aad, type: 2}
       propertyPath: secondsBetweenAppleDrops
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11430338, guid: d7f01940a165244a1b0ed8ac30262aad, type: 2}
+      propertyPath: chanceToChangeDirection
+      value: 0.03
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d7f01940a165244a1b0ed8ac30262aad, type: 2}
