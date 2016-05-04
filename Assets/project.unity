@@ -130,7 +130,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11430338, guid: d7f01940a165244a1b0ed8ac30262aad, type: 2}
       propertyPath: leftAndRightEdge
-      value: 100
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 11430338, guid: d7f01940a165244a1b0ed8ac30262aad, type: 2}
       propertyPath: secondsBetweenAppleDrops
